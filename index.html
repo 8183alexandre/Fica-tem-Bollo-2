@@ -1,625 +1,657 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="src/styles/styles.css">
-    <link rel="stylesheet" href="src/styles/header.css">
-    <link rel="stylesheet" href="src/styles/home.css">
-    <link rel="stylesheet" href="src/styles/menu.css">
-    <link rel="stylesheet" href="src/styles/footer.css">
-    <link rel="stylesheet" href="src/styles/testimonials.css">
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Confeitaria Artesanal</title>
 
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <header>
-       
-        <nav id="navbar">
-            
-                <i class="fa-solid fa-cake-candles" id="nav_logo">Fica tem Bollo !</i>
 
-            <ul id="nav_list">
-                <li class="nav-item active">
-                    <a href="#home">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#menu">Cardápio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#testimonials">Avaliações</a>
-                </li>
-            </ul>
+    <!-- seção de cabeçalho começa aqui  -->
+   
+    <header class="header">
+        <div class="logoContent">
+            <a href="#" class="logo"><img src="images/foto.logo1.jpg" alt=""></a>
+            <h1 class="logoName"> </h1>
+        </div>
 
-            <button class="btn-default">
-                <a href="https://wa.me/c/556798825686">
-                Peça aqui
-           
-            </button>
-        
-            <button id="mobile_btn">
-            
-                <i class="fa-solid fa-bars"></i>
-           
-            </button>
-
-
+        <nav class="navbar">
+            <a href="#home">Inicio</a>
+            <a href="#product">Nossas Delicias</a>
+            <a href="#blogs">Bolos</a>
+            <a href="#review">Comentários</a>
+            <a href="#contact">Contatos</a>
         </nav>
-        <div id="mobile_menu">
-            <ul id="mobile_nav_list">
-                <li class="nav-item">
-                    <a href="#home">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#menu">Cardápio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#testimonials">Avaliações</a>
-                </li>
-            </ul>
 
-            <button class="btn-default"></button>
-                Peça aqui
-            </button>
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="search...">
         </div>
     </header>
+    
+    <!-- Fim seção de cabeçalho começa aqui  -->
+   
 
-    <main id="content">
-        <section id="home">
-            <div class="shape"></div>
-            <div id="cta">
-                <h1 class="title">
-                    Deixe a sua Páscoa
-                    <span> mas Deliciosa!</span>
-                </h1>
-
-                <p class="description">
-                    Conheça as nossas Delicia da Páscoa.
-                    Bolos, Ovos Rechados, Brigadeiros pesonalizados da Páscoa, Coelhinhos de Chocolate Rechados.
-                </p>
-
-                <div id="cta_buttons">
-              
-                    <a href="https://wa.me/c/556798825686" class="btn-default">
-                       
-                        Ver cardápio
-                    </a>
-                           <a href="https://wa.me/c/556798825686">
-                             
-                            <button class="btn-default">
-                            <i class="fa-solid fa-phone"></i>
-                                
-                        </button>
-                        (67) 99882-5686
-                    </a>
-                </div>
-              
-                <div class="social-media-buttons">
-                    <a href="https://wa.me/c/556798825686">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-
-                    <a href="https://www.instagram.com/fica_tem_bollo?igsh=MzYzazk0NjM2NDM4">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="https://www.facebook.com/people/Laura-Cristina-De-Souza-Pinto/pfbid0wZeGKW1o3E4UFGwMsnsahXkcqEBcFviNq6DhbAuriXVgBuHKZDxFBhUZHRPBM8Hhl/">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div id="banner">
-                <img src="src/styles/fotos/foto.pasco1.jpg
-                
-                " alt="">
-            </div>
-        </section>
-
-        <!--Inicio do cardapio-->
-       
-        <section id="menu">
-            <h2 class="section-title">Cardápio</h2>
-             
-
-
-        <!--Inicio Caseiro-->
-        
-<section id="menu">
-    <h2 class="section-title"></h2>
-    <h3 class="section-subtitle">Nossos Bolos Caseiros</h3>
-
-    <div id="dishes">
-        <div class="dish">
-            <div class="dish-heart">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-            <img src="src/styles/fotos/foto.senou1.jpg.jpg" class="dish-image" alt="">
-
-            <h3 class="dish-title">
-                Cenoura + 2 Brigadeiro de coelhinho
-            </h3>
-
-            <span class="dish-description">
-            
-            </span>
-
-            <div class="dish-rate">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span>(890+)</span>
-            </div>
-
-            <div class="dish-price">
-                <h4></h4>
-                <h4></h4>
-                <button class="btn-default">
-                    <i class=""></i>
-                    
-                    <div class="social-media-buttons">
-                        <a href="https://wa.me/p/27735566196030684/556798825686">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </a>
-
-                    </div>
-
-
-                </button>
+    <!-- home section start here  -->
+    <section class="home" id="home">
+        <div class="homeContent">
+           
+            <h2>Bollo!</h2>
+           <h2>Confeitaria Artesanal</h2>
+            <p>Experimente as nossa variedades de delicias.
+                Bolos, Brigadeiros, Palha Italiana, Pão de Mel, Brownie e Bolos Caseiros.    </p>
+            <div class="home-btn">
+                <a href="https://wa.me/c/556798825686"><button>Agende seu Pedido!</button></a>
             </div>
         </div>
+    </section>
 
-        <div class="dish">
-            <div class="dish-heart">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-            <img src="src/styles/fotos/foto.pasco2.jpg" class="dish-image" alt="">
-
-            <h3 class="dish-title">
-                Coelho Dentão 70g Ao leite Recheado Brigadeiro Chocolate
-            </h3>
-
-            <span class="dish-description">
-                
-            </span>
-
-            <div class="dish-rate">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span>(1620+)</span>
-            </div>
-
-            <div class="dish-price">
-                <h4></h4>
-                <h4></h4>
-                <button class="btn-default">
-                    <i class=""></i>
-                    
-                    <div class="social-media-buttons">
-                         <a href="https://wa.me/p/27735566196030684/556798825686">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </a>
-
-                    </div>
-
-
-                </button>
-            </div>
-        </div>
-
-        <div class="dish">
-            <div class="dish-heart">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-            <img src="src/styles/fotos/foto.pasco3.jpg" class="dish-image" alt="">
-
-            <h3 class="dish-title">
-                Cenoura Recheado com massa de bolo de Cenoura e Brigadeiro 
-            </h3>
-
-            <span class="dish-description">
-                
-            </span>
-
-            <div class="dish-rate">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span>(1975+)</span>
-            </div>
-
-            <div class="dish-price">
-                <h4></h4>
-                <h4></h4>
-                <button class="btn-default">
-                    <i class=""></i>
-                    
-                    <div class="social-media-buttons">
-                        <a href="https://wa.me/p/8839102826117017/556798825686">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </a>
-
-                    </div>
-
-
-                </button>
-            </div>
-        </div>
-
-        <div class="dish">
-            <div class="dish-heart">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-            <img src="src/styles/fotos/foto.pasco5.jpg" class="dish-image" alt="">
-
-            <h3 class="dish-title">
-                Vulcão ChocoNinho
-            </h3>
-
-            <span class="dish-description">
-                Massa caseira de Chocolate 50%, Muita cobertura de Ninho Cremoso
-            </span>
-
-            <div class="dish-rate">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span>(1897+)</span>
-            </div>
-
-            <div class="dish-price">
-                <h4></h4>
-                <h4></h4>
-                <button class="btn-default">
-                    <i class=""></i>
-                    
-                    <div class="social-media-buttons">
-                         <a href="https://wa.me/p/27735566196030684/556798825686">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </a>
-
-                    </div>
-
-
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="menu">
-    <h2 class="section-title"></h2>
-    <h3 class="section-subtitle"></h3>
-
-    <div id="dishes">
-        <div class="dish">
-            <div class="dish-heart">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-            <img src="src/styles/fotos/foto.pasco6.jpg" class="dish-image" alt="">
-          
-            <h3 class="dish-title">
-                Vulcão de Cenoura
-            </h3>
-
-            <span class="dish-description">
-            Massa fofinha de Cenoura, Muita calda de Chocolate 50%
-            </span>
-
-            <div class="dish-rate">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span>(1927+)</span>
-            </div>
-
-            <div class="dish-price">
-                <h4></h4>
-                <h4></h4>
-                <button class="btn-default">
-                    <i class=""></i>
-                    
-                    <div class="social-media-buttons">
-                        <a href="https://wa.me/p/26562616816686488/556798825686">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </a>
-
-                    </div>
-
-
-                </button>
-            </div>
-        </div>
-
-        <div class="dish">
-            <div class="dish-heart">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-            <img src="src/styles/fotos/foto.pasco7.jpg" class="dish-image" alt="">
-
-            <h3 class="dish-title">
-                Bolo Trufado
-            </h3>
-
-            <span class="dish-description">
-                Massa fofinha de Cenoura, envovida com muito Chocolate 50% direto na Massa
-            </span>
-
-            <div class="dish-rate">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span>(1770+)</span>
-            </div>
-
-            <div class="dish-price">
-                <h4></h4>
-                <h4></h4>
-                <button class="btn-default">
-                    <i class=""></i>
-                    
-                    <div class="social-media-buttons">
-                         <a href="https://wa.me/c/556798825686">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </a>
-
-                    </div>
-
-
-                </button>
-            </div>
-        </div>
-
+    <!-- home section end here  -->
+   
+    <!-- product section start here  -->
+    <section class="product" id="product">
+        <div class="heading">
+            <h2>Nossas Delicias</h2>
       
-        
-        <div class="dish">
-            <div class="dish-heart">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-            <img src="src/styles/fotos/foto.pasco8.jpg" class="dish-image" alt="">
-
-            <h3 class="dish-title">
-                Bolo Caseiro Especial, com Adicional de Brigadeiros
-            </h3>
-            <span class="dish-description">
-                Escolha 1 massa:
-            </span>
-            <span class="dish-description">
-                Cenoura, Baunilha, Coco, Chocolate
-            </span>
-          
-            <div class="dish-rate">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span>(1988+)</span>
-            </div>
-
-            <div class="dish-price">
-                <h4></h4>
-                <h4></h4>
-                <button class="btn-default">
-                    <i class=""></i>
-                    
-                    <div class="social-media-buttons">
-                         <a href="https://wa.me/p/8925448390901462/556798825686">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </a>
-
-                    </div>
-
-
-                </button>
-            </div>
+            <p>Tudo feito de forma artesanal, com os melhores ingredientes.</p>
+            <p>Com ingredientes de altíssima qualidade, são criados os doces da Pascoa que podem ser compartilhados à mesa para serem desfrutados com carinho junto àqueles que gostamos.</p>
         </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+               
+              <!--video 1-->
+              
+                <div class="swiper-slide box">
+                    <div class="img">
+                      
+                        <video width="360" height="330" 
 
-        
-        
-        <div class="dish">
-            <div class="dish-heart">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-            <img src="src/styles/fotos/pasco10.jpg" class="dish-image" alt="">
-
-            <h3 class="dish-title">
-                Bolo de Fubá com Recheio de Goiabada
-            </h3>
-
-            <span class="dish-description">
-                Massa de de Fubá com  Goibada Cremosa no interior da massa
-            </span>
-
-            <div class="dish-rate">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span>(1856+)</span>
-            </div>
-
-            <div class="dish-price">
-                <h4></h4>
-                <h4></h4>
-                <button class="btn-default">
-                    <i class=""></i>
-                    
-                    <div class="social-media-buttons">
-                        <a href="https://wa.me/p/27735566196030684/556798825686">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </a>
+                        src="images/video" type="video/ mp4 "
+                        poster="images/foto.pascoa1.jpg.jpeg" 
+                       
+                        
+                            >
+                        
 
                     </div>
-
-
-                </button>
-            </div>
-        </div>
-
-        <div class="dish">
-            <div class="dish-heart">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-            <img src="src/styles/fotos/foto.pasco12.jpg" class="dish-image" alt="">
-
-            <h3 class="dish-title">
-                Bolo de fubá com Erva Dove
-            </h3>
-
-            <span class="dish-description">
-                Massa de Fubá com cemente de Erva Doce no interior da massa
-            </span>
-
-            <div class="dish-rate">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span>(1570+)</span>
-            </div>
-
-            <div class="dish-price">
-                <h4></h4>
-                <h4></h4>
-                <button class="btn-default">
-                    <i class=""></i>
-                    
-                    <div class="social-media-buttons">
-                        <a href="https://wa.me/p/27735566196030684/556798825686">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                        </a>
-
-                    </div>
-
-
-                </button>
-            </div>
-        </div>
-    </div>
-</section>        
- 
-<!--fim caseiros-->
-
-
-        <!--Fim do cardapio-->
-
-        <section id="testimonials">
-            <img src="src/styles/fotos/foto.linda.jpg.jpg" id="testimonial_chef" alt="">
-
-            <div id="testimonials_content">
-                <h2 class="section-title">
-                    Depoimentos
-                </h2>
-                <h3 class="section-subtitle">
-                    O que os clientes falam sobre nós
-                </h3>
-
-                <div id="feedbacks">
-                    <div class="feedback">
-                        <img src="src/styles/fotos/foto.f4.jpg.jpg" class="feedback-avatar" alt="">
-
-                        <div class="feedback-content">
-                            <p>
-                                Lohan Raphael
-                                <span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                            </p>
-                            <p>
-                                "Bolos Caseiros maravilhosos recomendo para todos"
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="feedback">
-                        <img src="src/styles/fotos/foto.f3.jpg.jpg" class="feedback-avatar" alt="">
-
-                        <div class="feedback-content">
-                            <p>
-                                M.Sophia
-                                <span>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                            </p>
-                            <p>
-                                "Delicia de Bolo Caseiro, o melhor que ja comi. Recomendo para todos.  "
-                            </p>
+                    <div class="product-content">
+                        <h3>Bolo</h3>
+                        <p>Sabor ninho e chocolate
+                        </p>
+                        <div class="orderNow">
+                            <a href="https://wa.me/c/556798825686"><button>Agende seu Pedido!</button></a>   
                         </div>
                     </div>
                 </div>
-
-
-       
+               
+               <!-- fim video 1-->
               
 
-                <button class="btn-default">
-                    Ver mais avaliações
-                </button>
+                 <!--  video 2-->
+
+               <div class="swiper-slide box">
+                <div class="img">
+                  
+                    <video width="360" height="330" 
+
+                    src="images/video " type="video/ mp4 "
+                    poster="images/foto.pascoa2.jpg.jpeg" 
+                    
+                    
+                        >
+                    
+
+                </div>
+                <div class="product-content">
+                    <h3>Caixinha</h3>
+                    <p> Com 4 Brigadeiro de Coelhinho
+                    </p>
+                    <div class="orderNow">
+                        <a href="https://wa.me/c/556798825686"><button>Agende seu Pedido!</button></a>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
+           
+             <!-- fim video 2-->
+              
+              <!--video 3-->
+              
+              <div class="swiper-slide box">
+                    <div class="img">
+                      
+                        <video width="360" height="330" 
 
-    <footer>
-        <img src="src/images/wave.svg" alt="">
+                        src="images/video " type="video/ mp4 "
+                        poster="images/foto.pascoa4.jpg.jpeg" 
+                        
+                        
+                            >
+                        
 
-        <div id="footer_items">
-            <span id="copyright">
-                &copy 2025 Carlos.A.G.O
-            </span>
+                    </div>
+                    <div class="product-content">
+                        <h3>Caixinha</h3>
+                        <p> Com 2 Coelhinho + Cenoura 
+                            
+                        </p>
+                        <div class="orderNow">
+                            <a href="https://wa.me/c/556798825686"><button>Agende seu Pedido!</button></a>
+                        </div>
+                    </div>
+                </div>
+               
+                <!--fim video 3-->
+               
+                <!--video 4-->
+               
+                <div class="swiper-slide box">
+                    <div class="img">
+                      
+                        <video width="360" height="330" 
 
-            <div class="social-media-buttons">
-                <a href="https://wa.me/c/556798825686">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
+                        src="images/video " type="video/ mp4 "
+                        poster="images/foto.pascoa5.jpg.jpeg" 
+                     
+                        
+                            >
+                        
 
-                <a href="https://www.instagram.com/fica_tem_bollo?igsh=MzYzazk0NjM2NDM4">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
+                    </div>
+                    <div class="product-content">
+                        <h3>Caixinha</h3>
+                        <p>Com 8 unidades de Coelhimho
+                        <div class="orderNow">
+                            <a href="https://wa.me/c/556798825686"><button>Agende seu Pedido!</button></a>  
+                        </div>
+                    </div>
+                </div>
+               
+                </div>
+               
+                <!--fim video 4-->
+               
+               <!--video 5-->
+               
+              
+              
+                <div class="swiper-slide box">
+                    <div class="img">
+                      
+                        <video width="360" height="330" 
 
-                <a href="https://www.facebook.com/people/Laura-Cristina-De-Souza-Pinto/pfbid0wZeGKW1o3E4UFGwMsnsahXkcqEBcFviNq6DhbAuriXVgBuHKZDxFBhUZHRPBM8Hhl/">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
+                        src="images/video " type="video/ mp4 "
+                        poster="images/foto.pascoa.jpg.jpeg" 
+                      
+                        
+                            >
+                        
+
+                    </div>
+                    <div class="product-content">
+                        <h3></h3>
+                        <p> 
+                        </p>
+                        <div class="orderNow">
+                            <a href="https://wa.me/c/556798825686"><button>Agende seu Pedido!</button></a>  
+                        </div>
+                    </div>
+                </div>
+               </div>
+                <!-- fim video 5-->
+            
+           
+           
+           
+                <div class="swiper-pagination"></div>
+        </div>
+
+       
+       <!--video 6-->
+       
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+               
+                <div class="swiper-slide box">
+                   
+                    <div class="img">
+                      
+                        <video width="360" height="330" 
+
+                        src="images/video " type="video/ mp4 "
+                        poster="images/foto.pascoa8.jpg.jpeg" 
+                       
+                        
+                            >
+                        
+
+                    </div>
+                    <div class="product-content">
+                        <h3>Pão de Mel</h3>
+                        <p>temos 4 tipo de recheio, chocolate,Ninho,Beijinho, Doce de Leite  
+                        </p>
+                        <div class="orderNow">
+                            <a href="https://wa.me/c/556798825686"><button>Agende seu Pedido!</button></a>
+                        </div>
+                    </div>
+                </div>
+               
+              
+                 <!--fim video 6-->
+              
+               
+                    <!--video 7-->
+                
+                 <div class="swiper-slide box">
+                  
+                    <div class="img">
+                      
+                        <video width="360" height="330" 
+
+                        src="images/video " type="video/ mp4 "
+                        poster="images/foto.pascoa9.jpg.jpeg" 
+                       
+                        
+                            >
+                        
+
+                    </div>
+                    <div class="product-content">
+                        <h3>Pão de Cenoura</h3>
+                        <p>Recheio de Chocolate
+                        </p>
+                        <div class="orderNow">
+                            <a href="https://wa.me/c/556798825686"><button>Agende seu Pedido!</button></a>
+                        </div>
+                    </div>
+                </div>
+               
+               
+                  <!--fim video 8-->
+               
+               
+                 <!--video 9-->
+              
+                  <div class="swiper-slide box">
+                   
+                    <div class="img">
+                      
+                        <video width="360" height="330" 
+
+                        src="images/video " type="video/ mp4 "
+                        poster="images/foto.braw.jpg.jpeg" 
+                       
+                        
+                            >
+                        
+
+                    </div>
+                    <div class="product-content">
+                        <h3> Brownie</h3>
+                        <p>temos 4 tipo de recheio, chocolate,Ninho,Beijinho, Doce de Leite  
+                        </p>
+                        <div class="orderNow">
+                            <a href="https://wa.me/c/556798825686"><button>Agende seu Pedido!</button></a>
+                        </div>
+                    </div>
+                </div>
+               
+
+                <!--fim video 9-->
+
+          <!--video 10-->
+ 
+          <div class="swiper-slide box">
+            <div class="img">
+              
+                <video width="360" height="330" 
+
+                src="images/video " type="video/ mp4 "
+                poster="images/foto.pasco3.jpg.jpeg" 
+               
+                        
+                >
+            
+
+        </div>
+        <div class="product-content">
+            <h3>Bolo Caseiro</h3>
+            <p>Sabor Cenoura com calda de chocolate + 3 coelinho + 7 brigadeiros 
+            </p>
+            <div class="orderNow">
+                <a href="https://wa.me/c/556798825686"><button>Agende seu Pedido!</button></a>
             </div>
+        </div>
+    </div>
+   
+    
+    <!--fim video 10-->
+
+
+            <div class="swiper-pagination"></div>
+       
+           
+        </div>
+   
+    
+   
+    </section>
+   
+    <div class="heading">
+        
+        <p>Aqui você encontra qualidade aliada a dedicação, praticidade, cuidados e carinho que já conquistaram o coração de muitos!</p>
+        <p> </p>
+        
+        
+    </div>
+    <!-- product section end here  -->
+
+    <!-- blogs section start here  -->
+    <section class="blogs" id="blogs">
+
+        <div class=" swiper blogs-row">
+            <div class="swiper-wrapper">
+                <div class=" swiper-slide box">
+                    <div class="img">
+                        <img src="images/foto.pasco19.jpg" alt="">
+                    </div>
+                   
+                    <div class="content">
+                        <h3>Ovo de Colher </h3>
+                        <P> O Ovo de colher "Quatro Leites" é uma das opções mais Deliciosas e cremosas na Páscoa, conhecido por ser um brigadeiro branco intenso feito com leite condensado, creme de leite, leite em pó (tipo Ninho) e leite de coco.  </P>
+                        <P></P>
+                        <a href="#blogs" class="btn">Faça sua Encomenda!</a>
+                    </div>
+                   
+             
+                </div>
+            
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+
+        </div>
+   
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+               
+              <!--video 1-->
+              
+                <div class="swiper-slide box">
+                    <div class="img">
+                      
+                        <video width="360" height="330" 
+
+                        src="images/video " type="video/ mp4 "
+                        poster="images/foto.pasc.ovo1.jpg.jpeg" 
+                       
+                        
+                            >
+                        
+
+                    </div>
+                    <div class="product-content">
+                        <h3> </h3>
+                        <p> 
+                        </p>
+                        <div class="orderNow">
+                            <a href="https://wa.me/c/556798825686"><button></button></a>
+                        </div>
+                    </div>
+                </div>
+               
+               <!-- fim video 1-->
+              
+
+                 <!--  video 2-->
+
+               <div class="swiper-slide box">
+                <div class="img">
+                  
+                    <video width="360" height="330" 
+
+                    src="images/video " type="video/ mp4 "
+                    poster="images/foto.pasc.ovo2.jpg.jpeg" 
+                   
+                        >
+                    
+
+                </div>
+                <div class="product-content">
+                    <h3></h3> 
+                    <p> 
+                    </p>
+                    <div class="orderNow">
+                        <a href="https://wa.me/c/556798825686"><button></button></a>
+                    </div>
+                </div>
+            </div>
+           
+             <!-- fim video 2-->
+              
+              <!--video 3-->
+              
+              <div class="swiper-slide box">
+                    <div class="img">
+                      
+                        <video width="360" height="330" 
+
+                        src="images/video. " type="video/ mp4 "
+                        poster="images/foto.pasco.ovo4.jpg.jpeg" 
+                       
+                        
+                            >
+                        
+
+                    </div>
+                    <div class="product-content">
+                        <h3></h3>
+                      <p></p>
+                     
+                        <div class="orderNow">
+                            <a href="https://wa.me/c/556798825686"><button></button></a>
+                        </div>
+                    </div>
+                </div>
+               
+                <!--fim video 3-->
+               
+                <!--video 4-->
+               
+                <div class="swiper-slide box">
+                    <div class="img">
+                      
+                        <video width="320" height="300" 
+
+                        src="images/video " type="video/ mp4 "
+                        poster="images/foto.pasco19.jpg" 
+                       
+                            >
+                        
+
+                    </div>
+                    <div class="product-content">
+                        <h3></h3>
+                        <p>
+                        </p>
+                        <div class="orderNow">
+                            <a href="https://wa.me/c/556798825686"><button></button></a>
+                        </div>
+                    </div>
+                </div>
+               
+                </div>
+               
+                <!--fim video 4-->
+                          
+          
+           
+           
+            <div class="swiper-pagination"></div>
+        </div>
+       
+      
+                        
+                            
+                        
+
+                   
+   
+    
+   
+    </section>   
+   
+   
+    </section>
+
+    <!-- blogs section ends here  -->
+
+    <!-- newsletter section start here  -->
+
+    
+    <!-- newsletter section ends here  -->
+
+    <!-- review section start here  -->
+    <section class="review" id="review">
+        <div class="heading">
+            <h2>Comentários</h2>
+        </div>
+
+
+        <div class=" swiper review-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>O dia mais Delicioso de nossas vidas foi belamente eternizado pelos seus maravilhosos Doces .Parabéns pelo seu trabalho. Obrigado</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/foto.f4.jpg.jpg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Lohan</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Parabéns pelo seu lindo trabalho. Seus bolos são a atração principal!, cada mordida é uma explosão de sabor, obrigado.</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/foto.cliente3.jpg.jpg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Noemia</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Muito obrigado por nos proporcionar essa essas Delicias. Agradeço muito pelo seu trabalho , estava tudo perfeito.</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/foto.cliente2.jpg.jpg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Caio Gabriel</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="client-review">
+                        <p>Excelente trabalho! Parabéns,pela sua dedicação, estava tudo maravilhoso e lindo, espero que vc realize toddas as comemorações.</p>
+                    </div>
+                    <div class="client-info">
+                        <div class="img">
+                            <img src="images/foto.cliente1.jpg.jpg" alt="">
+                        </div>
+                        <div class="clientDetailed">
+                            <h3>Alexandre</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+    </section>
+    <!-- review section ends here  -->
+
+    <!-- footer section start here  -->
+
+    <footer class="footer" id="contact">
+        <div class="box-container">
+            <div class="mainBox">
+                <div class="content">
+                    <a href="#"><img src="" alt=""></a>
+                    <h1 class="logoName"> </h1>
+                </div>
+
+                <p></p>
+
+            </div>
+           
+            
+            <div class="box">
+                <h3>Contátos</h3>
+                <a href="#"> <i class="fas fa-phone"></i>+67 9998825686</a>
+                <a href="#"> <i class="fas fa-envelope"></i>laura.crist202681@gmail.com</a>
+
+            </div>
+
+        </div>
+        <div class="share">
+            <a href="https://wa.me/c/556798825686" class="fab fa-whatsapp"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/fica_tem_bollo?igsh=MzYzazk0NjM2NDM4" class="fab fa-instagram" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="https://www.facebook.com/people/Laura-Cristina-De-Souza-Pinto/pfbid0wZeGKW1o3E4UFGwMsnsahXkcqEBcFviNq6DhbAuriXVgBuHKZDxFBhUZHRPBM8Hhl/" class="fab fa-facebook"></a>
+        </div>
+        <div class="credit">
+            Criado por <span>A G O</span><span></span></div>
         </div>
     </footer>
-    <script src="src/styles/ javascript/script.js"></script>
+
+
+
+
+
+
+
+
+
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file  -->
+    <script src="index.js"></script>
+
+
 </body>
+
 </html>
