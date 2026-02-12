@@ -110,7 +110,7 @@ html::-webkit-scrollbar-thumb{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(images/foto.pascoa9.jpg.jpeg) no-repeat;
+    background: url(images/foto.bolo.09.jpg.jpeg) no-repeat;
     background-size: cover;
     background-position: center center;
 }
@@ -125,7 +125,7 @@ html::-webkit-scrollbar-thumb{
     font-weight: bolder;
     margin-bottom: 2rem;
     line-height: 6rem;
-    color:#b13267;
+    color:#ee8eb6;
     text-shadow: var(--box-shadow);
     margin-top: 10px;
 }
@@ -133,7 +133,7 @@ html::-webkit-scrollbar-thumb{
     font-size: 2.8rem;
     line-height: 2;
     margin-bottom: 2rem;
-    color:#c75793;
+    color:#e9d2de;
     font-size: 3rem;
 }
 .home .homeContent .home-btn{
