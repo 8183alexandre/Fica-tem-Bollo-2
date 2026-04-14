@@ -110,7 +110,7 @@ html::-webkit-scrollbar-thumb{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(images/foto.pascoa2.jpg.jpeg) no-repeat;
+    background: url(images/foto.bolo02.jpg.jpeg) no-repeat;
     background-size: cover;
     background-position: center center;
 }
